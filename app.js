@@ -10,13 +10,13 @@ var userPoints = 0;
 
 console.log('Aloha kakahiaka!');
 
-alert('Aloooooha! My name is Matt, and this is my site. Let\'s get to know eachother by playing a quick guessing game, ok?);
+alert('Aloooooha! My name is Matt, and this is my site. Let\'s get to know eachother by playing a quick guessing game, ok?');
 
 var user = prompt('So if I\'m Matt, who might you be?');
 
 alert('Howzit ' + user + '! What else can I learn about you...');
 
-var answer = prompt('Does it sound like I\'m from Hawaii? , 'type yes or no').toLowerCase();
+var answer = prompt('Does it sound like I\'m from Hawaii?' , 'type yes or no').toLowerCase();
 
 console.log(answer);
 
