@@ -10,11 +10,11 @@ var userPoints = 0;
 
 console.log('Aloha kakahiaka!');
 
-alert('Aloooooha! My name is Matt, and this is my site. Let\'s get to know eachother by playing a quick guessing game, ok?');
+alert('Aloooooha! My name is Matt! Let\'s get to know eachother by playing a quick guessing game.');
 
 var user = prompt('So if I\'m Matt, who might you be?');
 
-alert('Howzit ' + user + '! What else can I learn about you...');
+alert('Howzit ' + user + '! Nice to meet you!');
 
 var answer = prompt('Does it sound like I\'m from Hawaii?' , 'type yes or no').toLowerCase();
 
@@ -28,4 +28,18 @@ if (answer === 'yes' || answer === 'y') {
     alert('I mean, I guess I could be from some other Pacific island...');
 }
 
-alert('you have ' + userPoints + ' points');
+alert('NICE! You have ' + userPoints + ' pineapple points');
+
+var answer = prompt('Do you think I like to surf?', 'type yes or no').toLowerCase();
+
+console.log(answer);
+
+if (answer === 'yes' || answer === 'y') {
+    //Surely they said yes
+    userPoints++;
+} else {
+    //If user guesses incorrectly, shame them again. 
+    alert('Yah, I do. Total stereo type.');
+}
+
+alert('You have ' + userPoints + ' pineapple points');
