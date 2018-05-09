@@ -10,7 +10,9 @@ var userPoints = 0;
 
 console.log('Aloha kakahiaka!');
 
-alert('Aloooooha! My name is Matt! Let\'s get to know eachother by playing a quick guessing game.');
+alert('Aloooooha! My name is Matt!');
+
+alert('Let\'s get to know eachother by playing a quick game. You get 1 pinapple point for each question you guess correctly');
 
 var user = prompt('So if I\'m Matt, who might you be?');
 
@@ -28,7 +30,7 @@ if (answer === 'yes' || answer === 'y') {
     alert('I mean, I guess I could be from some other Pacific island...');
 }
 
-alert('NICE! You have ' + userPoints + ' pineapple points');
+alert('You have ' + userPoints + ' pineapple points');
 
 var answer = prompt('Do you think I like to surf?', 'type yes or no').toLowerCase();
 
@@ -39,7 +41,22 @@ if (answer === 'yes' || answer === 'y') {
     userPoints++;
 } else {
     //If user guesses incorrectly, shame them again. 
-    alert('Yah, I do. Total stereo type.');
+    alert('Yah, I do. I\'m a walking stereo type.');
 }
 
 alert('You have ' + userPoints + ' pineapple points');
+
+var answer = prompt('I\'ve only just started learning to code. Have you coded before ' + user + '?') ('type yes or no').toLowerCase();
+
+console.log(answer);
+
+if (answer === 'yes' || answer === 'y') {
+    //I'm assuming I am probably the only one that is new to all this.
+    userPoints++;
+    alert('Cool! I hope you don\'t mind all the questions I\'ll be asking.');
+} else {
+    //Is this even a good question? 
+    alert('No? Well let\'s do our best to learn together!');
+}
+
+alert('What are you gonna do with ' + userPoints + ' pineapple points? Don\'t spend them all in one place!');
