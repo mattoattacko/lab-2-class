@@ -46,7 +46,6 @@ if (Surf === 'yes' || Surf === 'y') {
     alert('Yah, I do. I\'m a walking stereo type. You have ' + userPoints + ' pineapple points');
 }
 
-
 var CodeStatus = prompt('I\'ve only just started learning to code. Have you coded before ' + user + '?' , 'type yes or no').toLowerCase();
 
 console.log(CodeStatus);
