@@ -12,7 +12,7 @@ console.log('Aloha kakahiaka!');
 
 alert('Aloooooha! My name is Matt!');
 
-alert('Let\'s get to know eachother by playing a quick game. You get 1 pinapple point for each question you guess correctly');
+alert('Let\'s get to know each other by playing a quick game. You get 1 pineapple point for each question you guess correctly');
 
 var user = prompt('So if I\'m Matt, who might you be?');
 
@@ -88,3 +88,7 @@ if (LastQuestion === 'yes' || LastQuestion === 'y') {
 }
 
 alert('You earned a total of ' + userPoints + ' out of 5 points!');
+
+//question 6 w/ a variable. 
+
+var carRace = 
