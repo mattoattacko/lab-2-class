@@ -88,3 +88,42 @@ if (LastQuestion === 'yes' || LastQuestion === 'y') {
 }
 
 alert('You earned a total of ' + userPoints + ' out of 5 points!');
+
+//question 6 w/ a variable. 
+//I want the user to guess how many car's I've owned
+//answer is 9
+//I want to give the user multiple chances to guess the amount
+
+var carsOwned = ['9'];
+var counter = 0;
+var isTheirAnswerCorrect = false;
+
+while (counter < 5 && isTheirAnswerCorrect === false) {
+   var question6 = prompt('How many cars do you think I have owned in my life?');
+       for (var i = 0; i < carsOwned.length; i++) {
+        if (question6 === carsOwned[i]) {
+           question6 = true;
+   };
+   console.log(question6);
+
+};
+
+if (!isTheirAnswerCorrect) {
+   counter++;
+   alert('Not quite ' + user);
+   console.log(isTheirAnswerCorrect)
+
+}
+
+else {alert(user + ' You got it!');
+counter += 5;
+score++;
+
+}
+
+if (counter === 4) {
+   alert(user + 'I have owned 9 cars!');
+
+break;}
+
+}
