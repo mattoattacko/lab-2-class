@@ -125,5 +125,5 @@ if (counter === 4) {
    alert(user + 'I have owned 9 cars!');
 
 break;}
-
+//adding note to commit
 }

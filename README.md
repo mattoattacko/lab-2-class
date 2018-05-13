@@ -6,3 +6,7 @@ Continue to Lab 4 due today
 Subject functions
 
 Review and accept of deny changes 
+
+Second attempt to send changes
+
+Third times a charm
