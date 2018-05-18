@@ -90,5 +90,74 @@ if (LastQuestion === 'yes' || LastQuestion === 'y') {
 alert('You earned a total of ' + userPoints + ' out of 5 points!');
 
 //question 6 w/ a variable. 
+//I want the user to guess how many car's I've owned
+//answer is 9
+//I want to give the user multiple chances to guess the amount
 
-var carRace = 
+var carsOwned = ['9'];
+var counter = 0;
+var isTheirAnswerCorrect = false;
+
+while (counter < 5 && isTheirAnswerCorrect === false) {
+   var question6 = prompt('How many cars do you think I have owned in my life?');
+       for (var i = 0; i < carsOwned.length; i++) {
+        if (question6 === carsOwned[i]) {
+           question6 = true;
+   };
+   console.log(question6);
+
+};
+
+if (!isTheirAnswerCorrect) {
+   counter++;
+   alert('Not quite ' + user);
+   console.log(isTheirAnswerCorrect)
+}
+
+else {alert(user + ' You got it!');
+counter += 5;
+score++;
+}
+if (counter === 4) {
+   alert(user + 'I have owned 9 cars!');
+
+break;}
+}
+
+function question7() {
+    var myCarArray = ['Nisssan', 'Mazda', 'Toyota'];
+    var attemptsRemain = 6;
+    var areTheyCorrect = false;
+ 
+        while (attemptsRemain >= 0 && areTheyCorrect === false) {
+        var myCarQuestionAnswer = prompt('So I\'ve owned 9 cars total. Can you name any of my three favorite Japanese car companies?').toLowerCase();
+
+    console.log('Before running the for loop')
+
+        for (var i = 0; i < myCarArray.length; i++) {
+            if (myCarQuestionAnswer === myCarArray[i]) {
+                areTheyCorrect = true;
+
+    console.log('the for loop')
+        };
+        };
+ 
+        if (!areTheyCorrect) {
+            attemptsRemain--;
+            alert('Good guess! However, that is not one of them. ' + userName + '. You have ' + attemptsRemain + ' attempts remaining.');
+
+    console.log(userName + ' incorrect.');
+
+        } else {
+            alert(myCarQuestionAnswer + ' is my favorite type of food ' + userName);
+            attemptsRemain--;
+            score++;
+        };
+
+        if (attemptsRemain === 0) {
+            alert('There are only 6 or so major car manufactures in Japan. That you didn\'t guess even one correctly makes me sad ' + userName );
+            
+        };
+    };
+ }; 
+ 
