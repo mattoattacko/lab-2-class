@@ -112,16 +112,27 @@ if (!isTheirAnswerCorrect) {
    counter++;
    alert('Not quite ' + user);
    console.log(isTheirAnswerCorrect)
+<<<<<<< HEAD
+=======
+
+>>>>>>> a39322db5e2b6789cfbc011d7306f66466749161
 }
 
 else {alert(user + ' You got it!');
 counter += 5;
 score++;
+<<<<<<< HEAD
 }
+=======
+
+}
+
+>>>>>>> a39322db5e2b6789cfbc011d7306f66466749161
 if (counter === 4) {
    alert(user + 'I have owned 9 cars!');
 
 break;}
+<<<<<<< HEAD
 }
 
 function question7() {
@@ -161,3 +172,7 @@ function question7() {
     };
  }; 
  
+=======
+//adding note to commit
+}
+>>>>>>> a39322db5e2b6789cfbc011d7306f66466749161
